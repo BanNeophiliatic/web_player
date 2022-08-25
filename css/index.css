@@ -1,0 +1,310 @@
+@font-face {
+    font-family: consolas;
+    src: url("../resources/fonts/CONSOLA.TTF");
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 500px;
+}
+
+::-webkit-scrollbar-track {
+    border: 2px solid #1e1e62;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #546ccf;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #97bbfe;
+}
+
+body{
+    background-image: url("../resources/images/pixel-rain.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    padding: 10px;
+}
+
+
+h2{
+    margin: 10px;
+
+    color: #97bbfe;
+    font-size: xx-large;
+    font-family: consolas;
+}
+
+h3{
+    margin: 10px;
+
+    color: #97bbfe;
+    font-size: larger;
+    font-family: consolas;
+}
+
+div{
+    display: inline-block;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.times{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.time{
+    margin: 5px;
+    font-family: consolas;
+    color: #97bbfe;
+}
+
+.btn{
+    margin: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    background-color: #546ccf;
+
+    font-size: small;
+    text-align: center;
+    color: #daeefe;
+    font-family: consolas;
+    
+    border-radius: 4px;
+    border-color: #546ccf;
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: #97bbfe;
+    border-color: #97bbfe;
+}
+
+.btn:active{
+    background-color: #daeefe;
+    border-color: #daeefe;
+}
+
+#songs{
+    height: 710px;
+
+    overflow-y: scroll;
+}
+
+#currentPlaying{
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    
+    width: 500px;
+    position: absolute;
+    top: 70%;
+
+    background-color: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#currentSongName{
+    text-align: center;
+}
+
+#pauseBtn{  
+    background-color: #546ccf;
+
+    width: 80px;
+    height: 80px;
+
+    border-color: #546ccf;
+    border-radius: 40px;
+    border-style: solid;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+#pauseBtn:hover{
+    background-color: #97bbfe;
+    border-color: #97bbfe;
+}
+
+#pauseBtn:active{
+    background-color: #daeefe;
+    border-color: #daeefe;
+}
+
+#pauseBtn[mode = "pause"]{
+    background-image: url("../resources/images/pause.png");
+    background-size:cover;
+}
+
+#pauseBtn[mode = "resume"]{
+    background-image: url("../resources/images/resume.png");
+    background-size:cover;
+}
+
+#progressBar{
+    margin: 0;
+    width: 100%;
+}
+
+#previousBtn{
+    background-color: #546ccf;
+    background-image: url("../resources/images/skip.png");
+    background-size:cover;
+    
+    width: 60px;
+    height: 60px;
+    transform:scaleX(-1);
+
+    border-color: #546ccf;
+    border-style: solid;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    -webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+}
+
+#previousBtn:hover{
+    background-color: #97bbfe;
+    border-color: #97bbfe;
+}
+
+#previousBtn:active{
+    background-color: #daeefe;
+    border-color: #daeefe;
+}
+
+#nextBtn{
+    background-color: #546ccf;
+    background-image: url("../resources/images/skip.png");
+    background-size:cover;
+
+    width: 60px;
+    height: 60px;
+
+    border-color: #546ccf;
+    border-style: solid;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+#nextBtn:hover{
+    background-color: #97bbfe;
+    border-color: #97bbfe;
+}
+
+#nextBtn:active{
+    background-color: #daeefe;
+    border-color: #daeefe;
+}
+
+#loopBtn{
+    background-color: #546ccf;
+    background-image: url("../resources/images/loop.png");
+    background-size:cover;
+
+    width: 40px;
+    height: 40px;
+
+    border-color: #546ccf;
+    border-style: solid;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+#loopBtn[mode = "idle"]{
+    background-color: #546ccf;
+    border-color: #546ccf;
+}
+
+#loopBtn[mode = "idle"]:hover{
+    background-color: #97bbfe;
+    border-color: #97bbfe;
+}
+
+#loopBtn[mode = "idle"]:active{
+    background-color: #daeefe;
+    border-color: #daeefe;
+}
+
+#loopBtn[mode = "loop"]{
+    background-color: #97bbfe;
+    border-color: #97bbfe;
+}
+
+#loopBtn[mode = "loop"]:active{
+    background-color: #daeefe;
+    border-color: #daeefe;
+}
+
+#playlistsContainer{
+    position: absolute;
+    top: 0;
+    right: 1%;
+    
+
+    text-align: right;
+}
+
+#playlists{
+    height: 710px;
+    overflow-y: scroll;
+}
+
+#playlist-songs{
+    display: inline-block;
+    
+    height: 710px;
+    overflow-y: scroll;
+    direction:ltr;
+}
+
+#playlist-songs-hide{
+    display: none;
+}
