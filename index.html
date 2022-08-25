@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+        
+        <head>
+            <title class = "title">Music player</title>
+            <meta charset = "UTF-8"/>
+
+            <link rel = "stylesheet" href = "./css/index.css"></link>
+            <script type = "module" src = "./javascript/main.js"></script>
+        </head>
+        <body id = "body">
+            <div>
+                <header>
+                    <h2><b>Saved Songs</b></h2>
+                </header>
+                <div id = "songs">
+
+                </div>
+            </div>
+            <div id = "currentPlaying">
+                <h3 id = "currentSongName"></h3>
+                <input type = "range" id = "progressBar" value = "0" max = "100"></input>
+                <div class = "times">
+                    <p class = "time" id = "currentTime">00:00</p>
+                    <p class = "time" id = "duration">00:00</p>
+                </div>
+                <div class = "buttons">
+                    <button class = "btn" id = "previousBtn"></button>
+                    <button class = "btn" id = "pauseBtn" mode = "pause"></button>
+                    <button class = "btn" id = "nextBtn"></button>
+                    <button class = "btn" id = "loopBtn" mode = "idle"></button>
+                </div>
+            </div>
+            <div id = "playlistsContainer">
+                <header>
+                    <h2><b>Playlists</b></h2>
+                </header>
+                <div id = "playlist-songs-hide">
+
+                </div>
+                <div id = "playlists">
+
+                </div>
+            </div>
+        </body>
+    </html>
+</html>
