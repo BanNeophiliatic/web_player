@@ -1,5 +1,5 @@
 # Web Player
-![Player image]("player.png")
+![Player image]("https://github.com/BanNeophiliatic/web_player/blob/main/player.png")
 
 ## Requisitos
 1. Python 3.x (opcional si sabes hacer las tareas de los scripts manualmente).
