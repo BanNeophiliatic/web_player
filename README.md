@@ -1,6 +1,12 @@
 # Web Player
 <img title= "Player Image" src = "https://github.com/BanNeophiliatic/web_player/blob/main/player.png"/>
 
+Para resumir este proyecto consiste en un reproductor de audio que se hostea de manera local. Cumple la función de un spotify simple que funciona fuera de conexión puesto que reproduce audios descargados en el almacenamiento y de un consumo y peso mínimos. **Me he negado a hacerlo con responsive desing así que lo siento por los móviles**.
+
+Es intuitivo de usar así que me niego a explicar cada característica, mejor descárgalo y pruébalo ;).
+
+(A la espera de testeo, desconozco si funciona en linux y ha sido probado usando win64 con la extensión live server de vscode para hostear).
+
 ## Requisitos
 1. Python 3.x (opcional si sabes hacer las tareas de los scripts manualmente).
 2. Cualquier forma de servidor local para hostear el proyecto.
